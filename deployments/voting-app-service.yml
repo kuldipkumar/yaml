@@ -5,6 +5,8 @@ metadata:
   labels:
     name : voting-app-service
     app: demo-voting-app
+     annotations:
+        service.kubernetes.io/ibm-load-balancer-cloud-provider-ip-type: "private"
 
 spec:
   type: LoadBalancer
